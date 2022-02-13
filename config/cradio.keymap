@@ -10,7 +10,7 @@
 #define BASE 0
 #define NUM 1
 #define SYM 2
-#define NAV 3
+#define NAVI 3
 
 &mt {
   //  flavor = "tap-preferred";
@@ -70,7 +70,7 @@
 		&kp Q       &kp W      &kp F       &kp P          &kp B 	    &kp J   &kp L        &kp U       &kp Y      &kp SQT 
 		&mt LMETA A &mt LALT R &mt LCTRL S &mt LSHIFT T   &kp G 	    &kp M   &mt LSHIFT N &mt LCTRL E &mt LALT I &mt LMETA O
 		&kp Z       &kp X      &kp C       &kp D          &kp V		    &kp K   &kp H        &kp COMMA   &kp DOT    &kp SLASH
-          				                     &mo NAV SPC    &kp TAB     &mo SYM RET &mo NUM BSPC
+          				                     &mo NAVI SPC    &kp TAB     &mo SYM RET &mo NUM BSPC
                                        
 		>;
 		};
