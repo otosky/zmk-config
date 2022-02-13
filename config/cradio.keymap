@@ -98,7 +98,7 @@
 		&bt BT_CLR  &none      &none       &none          &none       &kp K_REDO &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO
 		&kp LMETA   &kp LALT   &kp LCTRL   &kp LSHIFT     &none       &kp LEFT   &kp DOWN     &kp UP      &kp RIGHT  &kp CAPS
 		&none       &kp RALT   &none       &none          &none       &kp HOME   &kp PG_DN    &kp PG_UP   &kp END    &kp INS
-          				                     &none          &none       &kc ESC    &kc BSPC
+          				                     &none          &none       &kp ESC    &kp BSPC
 		>;
 		};
 
