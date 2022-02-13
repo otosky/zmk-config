@@ -70,7 +70,7 @@
 		&kp Q       &kp W      &kp F       &kp P          &kp B 	    &kp J   &kp L        &kp U       &kp Y      &kp SQT 
 		&mt LMETA A &mt LALT R &mt LCTRL S &mt LSHIFT T   &kp G 	    &kp M   &mt LSHIFT N &mt LCTRL E &mt LALT I &mt LMETA O
 		&kp Z       &kp X      &kp C       &kp D          &kp V		    &kp K   &kp H        &kp COMMA   &kp DOT    &kp SLASH
-          				                     &kp SPC    &kp TAB     &mo SYM RET &mo NUM BSPC
+          				                     &lt NAVI SPC   &kp TAB     &lt SYM RET &lt NUM BSPC
                                        
 		>;
 		};
