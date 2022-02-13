@@ -93,7 +93,7 @@
 		>;
 		};	
 		
-		      nav {
+		      navi {
 		bindings = <
 		&bt BT_CLR  &none      &none       &none          &none       &kp K_REDO &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO
 		&kp LMETA   &kp LALT   &kp LCTRL   &kp LSHIFT     &none       &kp LEFT   &kp DOWN     &kp UP      &kp RIGHT  &kp CAPS
