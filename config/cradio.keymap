@@ -31,7 +31,7 @@
         
         combo_caps {
             timeout-ms = <50>;
-            key-positions = <15 32>;
+            key-positions = <30 32>;
             bindings = <&kp CAPS>;
         };
 
@@ -49,25 +49,25 @@
 
         combo_v {
             timeout-ms = <50>;
-            key-positions = <12 13>;
+            key-positions = <22 23>;
             bindings = <&kp V>;
         };
 
         combo_j {
             timeout-ms = <50>;
-            key-positions = <20 19>;
+            key-positions = <6 7>;
             bindings = <&kp J>;
         };
 
         combo_k {
             timeout-ms = <50>;
-            key-positions = <30 29>;
+            key-positions = <7 8>;
             bindings = <&kp K>;
         };
 
         combo_slash {
             timeout-ms = <50>;
-            key-positions = <29 28>;
+            key-positions = <27 28>;
             bindings = <&kp SLASH>;
         };
 
