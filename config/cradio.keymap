@@ -11,6 +11,7 @@
 #define NUM 1
 #define SYM 2
 #define NAVI 3
+#define FUNC 4
 
 &mt {
   flavor = "tap-preferred";
@@ -21,45 +22,55 @@
 
     combos {
         compatible = "zmk,combos";
+
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
             bindings = <&kp ESC>;
         };
         
-         combo_tab {
+        combo_caps {
             timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp TAB>;
+            key-positions = <15 32>;
+            bindings = <&kp CAPS>;
         };
-        
-            combo_ralt {
-            timeout-ms = <50>;
-            key-positions = <17 16>;
-            bindings = <&kp RALT>;
-        };
-        
-                    combo_lalt {
+
+        combo_z {
             timeout-ms = <50>;
             key-positions = <11 12>;
-            bindings = <&kp LALT>;
+            bindings = <&kp Z>;
         };
         
-                           combo_lgui {
+        combo_b {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp B>;
+        };
+
+        combo_v {
             timeout-ms = <50>;
             key-positions = <12 13>;
-            bindings = <&kp LGUI>;
+            bindings = <&kp V>;
         };
-        
-        
-           combo_rgui {
-            timeout-ms = <50>;
-            key-positions = <17 18>;
-            bindings = <&kp RGUI>;
-        };
-        
 
-        
+        combo_j {
+            timeout-ms = <50>;
+            key-positions = <20 19>;
+            bindings = <&kp J>;
+        };
+
+        combo_k {
+            timeout-ms = <50>;
+            key-positions = <30 29>;
+            bindings = <&kp K>;
+        };
+
+        combo_slash {
+            timeout-ms = <50>;
+            key-positions = <29 28>;
+            bindings = <&kp SLASH>;
+        };
+
     };
 
         keymap {
@@ -67,10 +78,10 @@
                 
        		base {
 		bindings = <
-		&kp Q       &kp W      &kp F       &kp P          &kp B 	    &kp J   &kp L        &kp U       &kp Y      &kp SQT 
-		&mt LMETA A &mt LALT R &mt LCTRL S &mt LSHIFT T   &kp G 	    &kp M   &mt LSHIFT N &mt LCTRL E &mt LALT I &mt LMETA O
-		&kp Z       &kp X      &kp C       &kp D          &kp V		    &kp K   &kp H        &kp COMMA   &kp DOT    &kp SLASH
-          				                     &lt NAVI SPC   &kp TAB     &lt SYM RET &lt NUM BSPC
+		&kp Q       &kp W      &kp F       &kp P          &kp B 	         &kp J       &kp L        &kp U       &kp Y      &kp SQT 
+		&mt LMETA A &mt LALT R &mt LCTRL S &mt LSHIFT T   &kp G 	         &kp M       &mt LSHIFT N &mt LCTRL E &mt LALT I &mt LMETA O
+		&kp Z       &kp X      &kp C       &kp D          &kp V		         &kp K       &kp H        &kp COMMA   &kp DOT    &kp SLASH
+          				                     &lt NAVI SPC   &lt FUNC TAB     &lt SYM RET &lt NUM BSPC
                                        
 		>;
 		};
@@ -78,7 +89,7 @@
           number {
 		bindings = <
 		&kp LBKT    &kp N7     &kp N8      &kp N9         &kp RBKT 	  &none   &kp GRAVE    &none       &none      &none 
-		&kp SEMI    &kp N4     &kp N5      &kp N6         &kp EQUAL   &none   &kp LSHIFT   &kp LCTL    &kp LALT   &kp LMETA 
+		&kp SEMI    &kp N4     &kp N5      &kp N6         &kp EQUAL   &none   &kp LSHIFT   &kp LCTRL   &kp LALT   &kp LMETA 
 		&kp GRAVE   &kp N1     &kp N2      &kp N3         &kp BSLH 	  &none   &none        &kp COMMA   &kp DOT    &kp RALT
           				                     &kp N0         &kp MINUS   &none   &none
 		>;
@@ -87,7 +98,7 @@
 		      symbol {
 		bindings = <
 		&kp LBRC    &kp AMPS   &kp ASTRK   &kp LPAR       &kp RBRC 	  &none   &kp TILDE    &kp PIPE    &kp BSLH   &none 
-		&kp COLON   &kp DLLR   &kp PRCNT   &kp CARET      &kp PLUS    &none   &kp LSHIFT   &kp LCTL    &kp LALT   &kp LMETA 
+		&kp COLON   &kp DLLR   &kp PRCNT   &kp CARET      &kp PLUS    &none   &kp LSHIFT   &kp LCTRL   &kp LALT   &kp LMETA 
 		&kp TILDE   &kp EXCL   &kp AT      &kp HASH       &kp PIPE 	  &none   &none        &kp COMMA   &kp DOT    &kp RALT
           				                     &kp RPAR       &kp UNDER   &none   &none
 		>;
@@ -99,6 +110,15 @@
 		&kp LMETA   &kp LALT   &kp LCTRL   &kp LSHIFT     &none       &kp LEFT   &kp DOWN     &kp UP      &kp RIGHT  &kp CAPS
 		&none       &kp RALT   &none       &none          &none       &kp HOME   &kp PG_DN    &kp PG_UP   &kp END    &kp INS
           				                     &none          &none       &kp ESC    &kp BSPC
+		>;
+		};
+
+		      func {
+		bindings = <
+		&kp F12     &kp F7     &kp F8      &kp F9         &none       &bt BT_NXT &bt BT_PRV   &none       &none      &none
+		&kp F11     &kp F4     &kp F5      &kp F6         &none       &none      &kp LSHIFT   &kp LCTRL   &kp LALT   &kp LMETA
+		&kp F10     &kp F1     &kp F2      &kp F3         &none       &none      &none        &none       &none      &none
+          				                     &none          &none       &none      &none
 		>;
 		};
 
