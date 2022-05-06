@@ -71,6 +71,18 @@
             bindings = <&kp SLASH>;
         };
 
+        combo_reset_left {
+            timeout-ms = <50>;
+            key-positions = <30 31>;
+            bindings = <&reset>;
+        };
+
+        combo_reset_right {
+            timeout-ms = <50>;
+            key-positions = <32 33>;
+            bindings = <&reset>;
+        };
+
     };
 
         keymap {
