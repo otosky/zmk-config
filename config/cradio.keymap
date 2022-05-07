@@ -77,12 +77,6 @@
             bindings = <&reset>;
         };
 
-        combo_reset_right {
-            timeout-ms = <50>;
-            key-positions = <32 33>;
-            bindings = <&reset>;
-        };
-
     };
 
         keymap {
