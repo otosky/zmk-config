@@ -77,6 +77,24 @@
             bindings = <&reset>;
         };
 
+        combo_reset_right {
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            bindings = <&reset>;
+        };
+
+        combo_boot_left {
+            timeout-ms = <50>;
+            key-positions = <0 20>;
+            bindings = <&bootloader>;
+        };
+
+        combo_boot_right {
+            timeout-ms = <50>;
+            key-positions = <9 29>;
+            bindings = <&bootloader>;
+        };
+
     };
 
         keymap {
