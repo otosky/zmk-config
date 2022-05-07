@@ -71,30 +71,6 @@
             bindings = <&kp SLASH>;
         };
 
-        combo_reset_left {
-            timeout-ms = <50>;
-            key-positions = <30 31>;
-            bindings = <&reset>;
-        };
-
-        combo_reset_right {
-            timeout-ms = <50>;
-            key-positions = <31 32>;
-            bindings = <&reset>;
-        };
-
-        combo_boot_left {
-            timeout-ms = <50>;
-            key-positions = <0 20>;
-            bindings = <&bootloader>;
-        };
-
-        combo_boot_right {
-            timeout-ms = <50>;
-            key-positions = <9 29>;
-            bindings = <&bootloader>;
-        };
-
     };
 
         keymap {
@@ -112,7 +88,7 @@
 
           number {
 		bindings = <
-		&kp LBKT    &kp N7     &kp N8      &kp N9         &kp RBKT 	  &none   &kp GRAVE    &none       &none      &none 
+		&kp LBKT    &kp N7     &kp N8      &kp N9         &kp RBKT 	  &none   &kp GRAVE    &none       &none      &reset 
 		&kp SEMI    &kp N4     &kp N5      &kp N6         &kp EQUAL   &none   &kp LSHIFT   &kp LCTRL   &kp LALT   &kp LMETA 
 		&kp GRAVE   &kp N1     &kp N2      &kp N3         &kp BSLH 	  &none   &none        &kp COMMA   &kp DOT    &kp RALT
           				                     &kp N0         &kp MINUS   &none   &none
@@ -123,14 +99,14 @@
 		bindings = <
 		&kp LBRC    &kp AMPS   &kp ASTRK   &kp LPAR       &kp RBRC 	  &none   &kp TILDE    &kp PIPE    &kp BSLH   &none 
 		&kp COLON   &kp DLLR   &kp PRCNT   &kp CARET      &kp PLUS    &none   &kp LSHIFT   &kp LCTRL   &kp LALT   &kp LMETA 
-		&kp TILDE   &kp EXCL   &kp AT      &kp HASH       &kp PIPE 	  &none   &none        &kp COMMA   &kp DOT    &kp RALT
+		&kp TILDE   &kp EXCL   &kp AT      &kp HASH       &kp PIPE 	  &bootloader   &none        &kp COMMA   &kp DOT    &kp RALT
           				                     &kp RPAR       &kp UNDER   &none   &none
 		>;
 		};	
 		
 		      navi {
 		bindings = <
-		&bt BT_CLR  &none      &none       &none          &none       &kp K_REDO &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO
+		&reset      &none      &none       &none          &bt BT_CLR  &kp K_REDO &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO
 		&kp LMETA   &kp LALT   &kp LCTRL   &kp LSHIFT     &none       &kp LEFT   &kp DOWN     &kp UP      &kp RIGHT  &kp CAPS
 		&none       &kp RALT   &none       &none          &none       &kp HOME   &kp PG_DN    &kp PG_UP   &kp END    &kp INS
           				                     &none          &none       &kp ESC    &kp BSPC
@@ -141,7 +117,7 @@
 		bindings = <
 		&kp F12     &kp F7     &kp F8      &kp F9         &none       &bt BT_NXT &bt BT_PRV   &none       &none      &none
 		&kp F11     &kp F4     &kp F5      &kp F6         &none       &none      &kp LSHIFT   &kp LCTRL   &kp LALT   &kp LMETA
-		&kp F10     &kp F1     &kp F2      &kp F3         &none       &none      &none        &none       &none      &none
+		&kp F10     &kp F1     &kp F2      &kp F3         &bootloader &none      &none        &none       &none      &none
           				                     &none          &none       &none      &none
 		>;
 		};
