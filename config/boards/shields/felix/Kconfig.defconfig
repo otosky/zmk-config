@@ -1,0 +1,22 @@
+config ZMK_BLE
+	default y
+
+config ZMK_USB
+	default y
+
+if SHIELD_FELIX_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "felix30"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_FELIX_LEFT || SHIELD_FELIX_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
