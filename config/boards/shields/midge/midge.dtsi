@@ -29,7 +29,7 @@
 		compatible = "zmk,kscan-gpio-direct";
 		label = "KSCAN";
 		input-gpios
-		= <&pro_micro_d 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+		= <&pro_micro_d 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 		, <&pro_micro_d 18 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 		, <&pro_micro_a 19 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 		, <&pro_micro_d 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
